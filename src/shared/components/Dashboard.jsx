@@ -27,6 +27,8 @@ const Dashboard = () => {
                 localStorage.removeItem("token", token);
                 navigate("/401");
             }
+        }).catch((err) => {
+            navigate("/401");
         });
     }, []);
 

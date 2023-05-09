@@ -1,4 +1,4 @@
-import { API, mockApi } from "@services/api";
+import { API } from "@services/api";
 
 const userService = {
     getAll: () => API.get("/user/getAllUsers"),
